@@ -135,11 +135,11 @@ Let's see how to create this index from our vector store and embeddings:
 from llama_index.core import VectorStoreIndex
 from llama_index.embeddings.huggingface_api import HuggingFaceInferenceAPIEmbedding
 
-embed_model = HuggingFaceInferenceAPIEmbedding(model_name="BAAI/bge-small-en-v1.5")
+embed_model = HuggingFaceerenceAPIEmbedding(model_name="BAAI/bge-small-en-v1.5")
 index = VectorStoreIndex.from_vector_store(vector_store, embed_model=embed_model)
 ```
 
-All infomration is automatically persisted within the `ChromaVectorStore` object and the passed directory path.
+All information is automatically persisted within the `ChromaVectorStore` object and the passed directory path.
 
 Great! Now that we can save and load our index easily, let's explore how to query it in different ways.
 
